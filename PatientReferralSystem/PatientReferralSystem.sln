@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "domain", "domain", "{1BD916
 	ProjectSection(SolutionItems) = preProject
 		docs\domain\domain-model.drawio = docs\domain\domain-model.drawio
 		docs\domain\domain-model.drawio.png = docs\domain\domain-model.drawio.png
+		docs\domain\referral-aggregate.drawio = docs\domain\referral-aggregate.drawio
+		docs\domain\referral-aggregate.drawio.png = docs\domain\referral-aggregate.drawio.png
 	EndProjectSection
 EndProject
 Global

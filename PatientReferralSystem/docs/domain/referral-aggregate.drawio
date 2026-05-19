@@ -1,0 +1,158 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="o9N6FONSlQpdtyKqiFER">
+    <mxGraphModel dx="774" dy="463" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Referral&lt;div&gt;-------------------------------&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ Guid ReferralId&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ ReferralStatus Status&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ Date CreatedDate&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ PriorityLevel Priority&lt;/div&gt;&lt;div&gt;--------------------------------&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ Submit()&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ Cancel()&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ Approve()&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ Reject()&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ Escalate()&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ AssignPriority()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="130" x="620" y="139" as="geometry" />
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="TriageAssessment&lt;br&gt;&lt;div&gt;-----------------------------------&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ Guid AssessmentId&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ string Notes&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ Date AssessmentDate&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ PriorityLevel Priority&lt;/div&gt;&lt;div&gt;-----------------------------------&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ CompleteAssessment()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="145" x="80" y="487" as="geometry" />
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ReferralDecision&lt;br&gt;&lt;div&gt;-------------------------------&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ Guid DecisionId&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ DecisionType Type&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ string Reason&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ Date DecidedAt&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="130" x="260" y="489" as="geometry" />
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="AuditLog&lt;br&gt;&lt;div&gt;----------------------------------&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ Guid AuditId&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ string Action&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ Date Timestamp&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="140" x="437" y="489" as="geometry" />
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Clinician&lt;br&gt;&lt;div&gt;-------------------------------------&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ Guid ClinicianId&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ string Name&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ string Speciality&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="150" x="80" y="696" as="geometry" />
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;ValueObject&amp;gt;&amp;gt;&lt;div&gt;PriorityLevel&lt;br&gt;&lt;div&gt;-----------------------------&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ string Value&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="626" y="489" as="geometry" />
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;ValueObject&amp;gt;&amp;gt;&lt;div&gt;ReferralReason&lt;br&gt;&lt;div&gt;----------------------------&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ string Description&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="780" y="489" as="geometry" />
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Patient&lt;br&gt;&lt;div&gt;----------------------------&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ Guid PatientId&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ string NHSNumber&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ string Name&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="940" y="489" as="geometry" />
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Department&lt;br&gt;&lt;div&gt;----------------------------&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ Guid DepartmentId&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ string Name&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="1100" y="489" as="geometry" />
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-11" edge="1" parent="1" source="CK-tGIrB-2OPbPNTLfLl-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.333;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;exitX=0.409;exitY=-0.026;exitDx=0;exitDy=0;exitPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="139" y="259" />
+            </Array>
+            <mxPoint x="140" y="479" as="sourcePoint" />
+            <mxPoint x="620" y="259.0300000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-32" connectable="0" parent="CK-tGIrB-2OPbPNTLfLl-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.9491" as="geometry">
+            <mxPoint x="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-33" connectable="0" parent="CK-tGIrB-2OPbPNTLfLl-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="contains" vertex="1">
+          <mxGeometry relative="1" x="-0.8328" y="-7" as="geometry">
+            <mxPoint x="-26" y="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-34" connectable="0" parent="CK-tGIrB-2OPbPNTLfLl-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.9357" y="-1" as="geometry">
+            <mxPoint y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-15" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.021;entryY=0.6;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="317.27" y="279" />
+            </Array>
+            <mxPoint x="317" y="489" as="sourcePoint" />
+            <mxPoint x="620" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-35" connectable="0" parent="CK-tGIrB-2OPbPNTLfLl-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.9363" as="geometry">
+            <mxPoint x="11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-36" connectable="0" parent="CK-tGIrB-2OPbPNTLfLl-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="contains" vertex="1">
+          <mxGeometry relative="1" x="-0.8077" y="-4" as="geometry">
+            <mxPoint x="-31" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-38" connectable="0" parent="CK-tGIrB-2OPbPNTLfLl-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.9038" as="geometry">
+            <mxPoint x="3" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-16" edge="1" parent="1" source="CK-tGIrB-2OPbPNTLfLl-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.838;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;" target="CK-tGIrB-2OPbPNTLfLl-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-39" connectable="0" parent="CK-tGIrB-2OPbPNTLfLl-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="many" vertex="1">
+          <mxGeometry relative="1" x="-0.9071" y="2" as="geometry">
+            <mxPoint x="25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-40" connectable="0" parent="CK-tGIrB-2OPbPNTLfLl-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="records" vertex="1">
+          <mxGeometry relative="1" x="-0.4193" y="-8" as="geometry">
+            <mxPoint x="-25" y="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-41" connectable="0" parent="CK-tGIrB-2OPbPNTLfLl-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.8281" as="geometry">
+            <mxPoint x="5" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-20" edge="1" parent="1" source="CK-tGIrB-2OPbPNTLfLl-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="685" y="489" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-28" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.01;entryY=0.873;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=blockThin;startFill=1;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="839" y="320" />
+            </Array>
+            <mxPoint x="838.7" y="487" as="sourcePoint" />
+            <mxPoint x="750" y="320.33000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-29" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.01;entryY=0.873;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1000" y="289" />
+            </Array>
+            <mxPoint x="1000" y="489" as="sourcePoint" />
+            <mxPoint x="750" y="289.03000000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-43" connectable="0" parent="CK-tGIrB-2OPbPNTLfLl-29" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="belongs to" vertex="1">
+          <mxGeometry relative="1" x="-0.6637" y="10" as="geometry">
+            <mxPoint x="33" y="36" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-30" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.01;entryY=0.873;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1160" y="257" />
+            </Array>
+            <mxPoint x="1160" y="487" as="sourcePoint" />
+            <mxPoint x="750" y="257.03000000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-44" connectable="0" parent="CK-tGIrB-2OPbPNTLfLl-30" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="routed to" vertex="1">
+          <mxGeometry relative="1" x="-0.8698" y="1" as="geometry">
+            <mxPoint x="21" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-31" edge="1" parent="1" source="CK-tGIrB-2OPbPNTLfLl-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="153" y="699" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-42" connectable="0" parent="CK-tGIrB-2OPbPNTLfLl-31" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="performed by" vertex="1">
+          <mxGeometry relative="1" x="0.0384" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CK-tGIrB-2OPbPNTLfLl-45" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=24;fontStyle=4" value="Referral Aggregate Design" vertex="1">
+          <mxGeometry height="30" width="700" x="360" y="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
