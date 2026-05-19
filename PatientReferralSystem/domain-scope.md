@@ -51,7 +51,7 @@ Represents the individual receiving healthcare services through the referral pro
 
 **Responsibilities**
 - Stores patient contact and identifying information
-- Maintain referral historty for continuity of care
+- Maintain referral history for continuity of care
 - Links referrals to the appropriate clinical pathway
 
 ### Referral
